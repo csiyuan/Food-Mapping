@@ -1,0 +1,2425 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Food Mapping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-submenu.css">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="fonts/linearicons/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="css/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jnoty.css">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" id="style_sheet" href="css/skins/yellow.css">
+
+    <!-- Favicon icon -->
+    <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script  src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script  src="js/html5shiv.min.js"></script>
+    <script  src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- <div class="page_loader"></div> -->
+    <!-- 
+    <header class="top-header top-header-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-sm-7">
+                    <div class="list-inline">
+                        <a href="tel:+65 6635 6225"><i class="fa fa-phone"></i> Need Support? +65 8262 2624</a>
+                        
+                        <a href="mailto:info@1axis.sg"><i class="fa fa-envelope"></i>info@1axis.sg</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header> -->
+    <!-- Main header start -->
+    <header style="background-color: transparent;" class="main-header sticky-header header-with-top">
+        <div class="container">
+            <!-- <img style="width: auto; height: 100px;" src="img/logos/carmetic_logo-nobg.png"> -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" style="cursor: pointer;" href="index.html">
+                    <!-- <img style="width: auto; height: 100px;" src="img/logos/carmetic_logo-nobg.png"> -->
+                    <div style=" margin-left: -10px; font-weight: 800;">
+                        Food Mapping<span style="padding-bottom: 10px;color: white;"
+                            className="text-blue-500"> </span>
+                    </div>
+                </a>
+
+
+                <button class="navbar-toggler" type="button" id="drawer">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="navbar-collapse collapse w-100 justify-content-end" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown active">
+                            <a style="font-weight: bold;" class="nav-link dropdown-toggle" href="index.html"
+                                id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a style="font-weight: bold;" class="nav-link dropdown-toggle" href="about.html"
+                                id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a style="font-weight: bold;" class="nav-link dropdown-toggle" href="services.html"
+                                id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Service
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href=""
+                                onclick="openLink('https://www.facebook.com/carmeticdetailingsg/');"
+                                id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Cars
+                            </a>
+                        </li> -->
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Main header end -->
+
+    <!-- Sidenav start -->
+    <nav id="sidebar" class="nav-sidebar">
+        <!-- Close btn-->
+        <div id="dismiss">
+            <i class="fa fa-close"></i>
+        </div>
+        <div style="overflow-y: scroll; max-height: 100%" class="sidebar-inner">
+            <div class="sidebar-logo">
+                <a href="index.html">
+                    <img style="width: 120px" src="" alt="sidebarlogo">
+                </a>
+            </div>
+            <div class="sidebar-navigation">
+                <h3 class="heading">Pages</h3>
+                <ul class="menu-list">
+                    <li><a href="index.html" class="active pt0">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us </a>
+                    </li>
+                    <li>
+                        <a href="services.html"> Services </a>
+                    </li>
+                    <!-- <li>
+                        <a href="" onclick="openLink('https://www.facebook.com/carmeticdetailingsg/');">Shop</a>
+                    </li> -->
+                    <li>
+                        <a href="contact.html"> Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="get-in-touch">
+                <h3 class="heading">Get in Touch</h3>
+                <div class="get-in-touch-box d-flex mb-2">
+                    <i class="fa fa-mobile"></i>
+                    <a href="tel:+65 6635 6225">Phone: +65 8262 2624</a>
+                </div>
+
+                <!-- <div class="get-in-touch-box d-flex mb-2">
+                    <i class="fa fa-envelope-o"></i>
+                    <div class="media-body">
+                        <a href="#">info@1axis.sg</a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="get-social">
+                <h3 class="heading">Get Social</h3>
+                <div class="social-media social-media-two clearfix">
+                    <div class="social-list">
+
+                        <div onclick="openLink('https://www.facebook.com/carmeticdetailingsg/');"
+                            style="margin-right: 10px;" class="icon facebook">
+
+                            <span><i class="fa fa-facebook"></i></span>
+                        </div>
+
+                        <div onclick="openLink('https://www.instagram.com/carmeticdetailingsg/');"
+                            class="icon instagram">
+
+                            <span><i class="fa fa-instagram"></i></span>
+                        </div>
+                        <div onclick="openLink('https://linktr.ee/carmeticsg');" class="icon"
+                            style="background-color: green; margin-left: 10px;">
+
+                            <span><i class="fa fa-tree"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Sidenav end -->
+
+    <!-- Banner start -->
+    <div class="banner" id="banner">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner banner-slider-inner">
+                <div class="carousel-item active item-bg">
+                    <img class="d-block w-100 h-100" src="img/banner/banner-1.jpg" alt="banner">
+                    <div class="carousel-content prl-30 container banner-info-2 bi-2 text-start">
+                        <div class="typing">
+                            <h2>Food Mapping</h2>
+                            <!-- <p>BUY / SELL / SCRAP / EXPORT / TRADE-IN</p> -->
+                        </div>
+                        <p>Delicious Creations Inspired by Our Love of Food</p>
+                        <div class="col-lg-12 text-left">
+                            <a class="btn-6" href="contact.html">
+                                <span>Order Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item item-bg">
+                    <img class="d-block w-100 h-100" src="img/banner/banner-1.jpg" alt="banner">
+                    <div class="carousel-content prl-30 container banner-info-2 bi-2 text-start">
+                        <div class="typing">
+                            <h2>Food Mapping</h2>
+                            <!-- <h5>BUY / SELL / SCRAP / EXPORT / TRADE-IN</h3> -->
+                        </div>
+                        <p>Sweet Indulgences and Delightful Surprises</p>
+
+                        <div class="col-lg-12 text-left">
+                            <a class="btn-6" href="contact.html">
+                                <span>Order Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Banner end -->
+
+    <!-- Featured Services start -->
+    <div class="featured-car content-area-21">
+        <div class="container">
+            <!-- Main title -->
+            <div class="section-header d-flex">
+                <h2 data-title="Our Best Works"> Our Best Works</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="car-box-3">
+                        <div class="car-thumbnail">
+                            <a href="car-details.html" class="car-img">
+                                <!-- <div class="for">Special Discounts</div> -->
+                                <div class="price-box">
+                                    <!-- <span class="del"><del>$2000.00</del></span> -->
+                                    <br>
+                                    <!-- <span>$1880.00</span> -->
+                                </div>
+                                <img class="d-block w-100" src="img/cakes/cake1.jpg" alt="car">
+                            </a>
+                            <div class="carbox-overlap-wrapper">
+                                <div class="overlap-box">
+                                    <div class="overlap-btns-area">
+                                        <a class="overlap-btn" data-bs-toggle="modal"
+                                            data-bs-target="#carOverviewModal">
+                                            <i class="fa fa-eye-slash"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="detail">
+                            <h1 class="title">
+                                <a href="car-details.html">Spray Paint & Body Kits</a>
+                            </h1>
+                            <ul class="custom-list">
+                                <li>
+                                    <a href="#">19 years of experience</a> 
+                                </li>
+                            </ul>
+                            <ul class="facilities-list clearfix">
+                                <li>
+                                    <i class="flaticon-fuel"></i> Satisfaction
+                                </li>
+                                <li>
+                                    <i class="flaticon-way"></i> Shine
+                                </li>
+                                <li>
+                                    <i class="flaticon-gear"></i> Certified
+                                </li>
+                                <li>
+                                    <i class="flaticon-medal"></i> Award Winning
+                                </li>
+                               
+                            </ul>
+                        </div> -->
+                        <!-- <div class="footer clearfix">
+                            <div class="pull-left ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <!-- <i class="fa fa-star-o"></i>
+                                <span>(100 Reviews)</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="car-box-3">
+                        <div class="car-thumbnail">
+                            <a href="car-details.html" class="car-img">
+                                <!-- <div class="for">Special Discounts</div> -->
+                                <div class="price-box">
+                                    <!-- <span class="del"><del>$2000.00</del></span> -->
+                                    <br>
+                                    <!-- <span>$1880.00</span> -->
+                                </div>
+                                <img class="d-block w-100" src="img/cakes/cake2.jpg" alt="car">
+                            </a>
+                            <div class="carbox-overlap-wrapper">
+                                <div class="overlap-box">
+                                    <div class="overlap-btns-area">
+                                        <a class="overlap-btn" data-bs-toggle="modal"
+                                            data-bs-target="#carOverviewModal">
+                                            <i class="fa fa-eye-slash"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="detail">
+                            <h1 class="title">
+                                <a href="car-details.html">Spray Paint & Body Kits</a>
+                            </h1>
+                            <ul class="custom-list">
+                                <li>
+                                    <a href="#">19 years of experience</a> 
+                                </li>
+                            </ul>
+                            <ul class="facilities-list clearfix">
+                                <li>
+                                    <i class="flaticon-fuel"></i> Satisfaction
+                                </li>
+                                <li>
+                                    <i class="flaticon-way"></i> Shine
+                                </li>
+                                <li>
+                                    <i class="flaticon-gear"></i> Certified
+                                </li>
+                                <li>
+                                    <i class="flaticon-medal"></i> Award Winning
+                                </li>
+                               
+                            </ul>
+                        </div> -->
+                        <!-- <div class="footer clearfix">
+                            <div class="pull-left ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <!-- <i class="fa fa-star-o"></i>
+                                <span>(100 Reviews)</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="car-box-3">
+                        <div class="car-thumbnail">
+                            <a href="car-details.html" class="car-img">
+                                <!-- <div class="for">Special Discounts</div> -->
+                                <div class="price-box">
+                                    <!-- <span class="del"><del>$2000.00</del></span> -->
+                                    <br>
+                                    <!-- <span>$1880.00</span> -->
+                                </div>
+                                <img class="d-block w-100" src="img/cakes/cake3.jpg" alt="car">
+                            </a>
+                            <div class="carbox-overlap-wrapper">
+                                <div class="overlap-box">
+                                    <div class="overlap-btns-area">
+                                        <a class="overlap-btn" data-bs-toggle="modal"
+                                            data-bs-target="#carOverviewModal">
+                                            <i class="fa fa-eye-slash"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="detail">
+                            <h1 class="title">
+                                <a href="car-details.html">Spray Paint & Body Kits</a>
+                            </h1>
+                            <ul class="custom-list">
+                                <li>
+                                    <a href="#">19 years of experience</a> 
+                                </li>
+                            </ul>
+                            <ul class="facilities-list clearfix">
+                                <li>
+                                    <i class="flaticon-fuel"></i> Satisfaction
+                                </li>
+                                <li>
+                                    <i class="flaticon-way"></i> Shine
+                                </li>
+                                <li>
+                                    <i class="flaticon-gear"></i> Certified
+                                </li>
+                                <li>
+                                    <i class="flaticon-medal"></i> Award Winning
+                                </li>
+                               
+                            </ul>
+                        </div> -->
+                        <!-- <div class="footer clearfix">
+                            <div class="pull-left ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <!-- <i class="fa fa-star-o"></i>
+                                <span>(100 Reviews)</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="car-box-3">
+                        <div class="car-thumbnail">
+                            <a href="car-details.html" class="car-img">
+                                <!-- <div class="for">Special Discounts</div> -->
+                                <div class="price-box">
+                                    <!-- <span class="del"><del>$2000.00</del></span> -->
+                                    <br>
+                                    <!-- <span>$1880.00</span> -->
+                                </div>
+                                <img class="d-block w-100" src="img/cakes/cake4.jpg" alt="car">
+                            </a>
+                            <div class="carbox-overlap-wrapper">
+                                <div class="overlap-box">
+                                    <div class="overlap-btns-area">
+                                        <a class="overlap-btn" data-bs-toggle="modal"
+                                            data-bs-target="#carOverviewModal">
+                                            <i class="fa fa-eye-slash"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="detail">
+                            <h1 class="title">
+                                <a href="car-details.html">Spray Paint & Body Kits</a>
+                            </h1>
+                            <ul class="custom-list">
+                                <li>
+                                    <a href="#">19 years of experience</a> 
+                                </li>
+                            </ul>
+                            <ul class="facilities-list clearfix">
+                                <li>
+                                    <i class="flaticon-fuel"></i> Satisfaction
+                                </li>
+                                <li>
+                                    <i class="flaticon-way"></i> Shine
+                                </li>
+                                <li>
+                                    <i class="flaticon-gear"></i> Certified
+                                </li>
+                                <li>
+                                    <i class="flaticon-medal"></i> Award Winning
+                                </li>
+                               
+                            </ul>
+                        </div> -->
+                        <!-- <div class="footer clearfix">
+                            <div class="pull-left ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <!-- <i class="fa fa-star-o"></i>
+                                <span>(100 Reviews)</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="car-box-3">
+                        <div class="car-thumbnail">
+                            <a href="car-details.html" class="car-img">
+                                <!-- <div class="for">Special Discounts</div> -->
+                                <div class="price-box">
+                                    <!-- <span class="del"><del>$2000.00</del></span> -->
+                                    <br>
+                                    <!-- <span>$1880.00</span> -->
+                                </div>
+                                <img class="d-block w-100" src="img/cakes/cake5.jpg" alt="car">
+                            </a>
+                            <div class="carbox-overlap-wrapper">
+                                <div class="overlap-box">
+                                    <div class="overlap-btns-area">
+                                        <a class="overlap-btn" data-bs-toggle="modal"
+                                            data-bs-target="#carOverviewModal">
+                                            <i class="fa fa-eye-slash"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="detail">
+                            <h1 class="title">
+                                <a href="car-details.html">Spray Paint & Body Kits</a>
+                            </h1>
+                            <ul class="custom-list">
+                                <li>
+                                    <a href="#">19 years of experience</a> 
+                                </li>
+                            </ul>
+                            <ul class="facilities-list clearfix">
+                                <li>
+                                    <i class="flaticon-fuel"></i> Satisfaction
+                                </li>
+                                <li>
+                                    <i class="flaticon-way"></i> Shine
+                                </li>
+                                <li>
+                                    <i class="flaticon-gear"></i> Certified
+                                </li>
+                                <li>
+                                    <i class="flaticon-medal"></i> Award Winning
+                                </li>
+                               
+                            </ul>
+                        </div> -->
+                        <!-- <div class="footer clearfix">
+                            <div class="pull-left ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <!-- <i class="fa fa-star-o"></i>
+                                <span>(100 Reviews)</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="car-box-3">
+                        <div class="car-thumbnail">
+                            <a href="car-details.html" class="car-img">
+                                <!-- <div class="for">Special Discounts</div> -->
+                                <div class="price-box">
+                                    <!-- <span class="del"><del>$2000.00</del></span> -->
+                                    <br>
+                                    <!-- <span>$1880.00</span> -->
+                                </div>
+                                <img class="d-block w-100" src="img/cakes/cake6.jpg" alt="car">
+                            </a>
+                            <div class="carbox-overlap-wrapper">
+                                <div class="overlap-box">
+                                    <div class="overlap-btns-area">
+                                        <a class="overlap-btn" data-bs-toggle="modal"
+                                            data-bs-target="#carOverviewModal">
+                                            <i class="fa fa-eye-slash"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="detail">
+                            <h1 class="title">
+                                <a href="car-details.html">Spray Paint & Body Kits</a>
+                            </h1>
+                            <ul class="custom-list">
+                                <li>
+                                    <a href="#">19 years of experience</a> 
+                                </li>
+                            </ul>
+                            <ul class="facilities-list clearfix">
+                                <li>
+                                    <i class="flaticon-fuel"></i> Satisfaction
+                                </li>
+                                <li>
+                                    <i class="flaticon-way"></i> Shine
+                                </li>
+                                <li>
+                                    <i class="flaticon-gear"></i> Certified
+                                </li>
+                                <li>
+                                    <i class="flaticon-medal"></i> Award Winning
+                                </li>
+                               
+                            </ul>
+                        </div> -->
+                        <!-- <div class="footer clearfix">
+                            <div class="pull-left ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <!-- <i class="fa fa-star-o"></i>
+                                <span>(100 Reviews)</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <a class="btn-4" href="services.html">
+                        <span>View More</span> <i class="arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!-- Featured services end -->
+
+
+        <!-- Counters strat -->
+        <!-- <div class="counters-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="counter-box-2">
+                                <div class="icon">
+                                    <i class="flaticon-car"></i>
+                                </div>
+                                <div class="detail align-self-center">
+                                    <h2>475</h2>
+                                    <h5>Total Cars</h5>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="counter-box-2">
+                                <div class="icon">
+                                    <i class="flaticon-blog"></i>
+                                </div>
+                                <div class="detail">
+                                    <h2>1402</h2>
+                                    <h5>Dealer Reviews</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="counter-box-2">
+                                <div class="icon">
+                                    <i class="flaticon-user"></i>
+                                </div>
+                                <div class="detail">
+                                    <h2>254</h2>
+                                    <h5>Happy Clients</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="counter-box-2">
+                                <div class="icon">
+                                    <i class="flaticon-medal"></i>
+                                </div>
+                                <div class="detail">
+                                    <h2>542</h2>
+                                    <h5>Awards Winning</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        <!-- Counters end -->
+
+        <!-- Facilities section start -->
+        <!-- <div class="service-section" style="padding-top: 100px;">
+            <div class="container">
+                <!-- Main title -->
+        <!-- <div class="section-header d-flex">
+                    <h2 data-title="Our Guarantees"> Our Guarantees</h2>
+                </div>
+                <div class="title-border">
+                <div class="title-border-inner"></div>
+                <div class="title-border-inner"></div>
+                <div class="title-border-inner"></div>
+            </div> 
+                <br><br> 
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="service-info-2">
+                            <div class="icon">
+                                <i class="flaticon-shield"></i>
+                            </div>
+                            <div class="detail">
+                                <h3><a href="services.html">Highly Secured</a></h3>
+                                <p>We guarantee all services or transactions are protected with the highest level of
+                                    security</p>
+                                <a href="services.html" class="read-more">Read more...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="service-info-2">
+                            <div class="icon">
+                                <i class="flaticon-deal"></i>
+                            </div>
+                            <div class="detail">
+                                <h3><a href="services.html">Trusted Agents</a></h3>
+                                <p>We promise that all interactions and transactions are to be kept confidential without
+                                    any
+                                    leaks</p>
+                                <a href="services.html" class="read-more">Read more...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="service-info-2">
+                            <div class="icon">
+                                <i class="flaticon-money"></i>
+                            </div>
+                            <div class="detail">
+                                <h3><a href="services.html">Get an Offer</a></h3>
+                                <p>We have times of discounts for customers who are frequent or first time buyers or
+                                    sellers
+                                </p>
+                                <a href="services.html" class="read-more">Read more...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="service-info-2">
+                            <div class="icon">
+                                <i class="flaticon-support-2"></i>
+                            </div>
+                            <div class="detail">
+                                <h3><a href="services.html">Free Support</a></h3>
+                                <p>We promise you we will reply promptly for all interactions with us, with no extra
+                                    charges
+                                </p>
+                                <a href="services.html" class="read-more">Read more...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 text-center">
+                    <a class="btn-4" href="services.html">
+                        <span>Learn More</span> <i class="arrow"></i>
+                    </a>
+                </div> 
+                </div>
+            </div>
+        </div>
+        <br><br> -->
+        <!-- Facilities section end -->
+
+
+
+        <!-- Testimonial 3 start -->
+        <!-- <div class="testimonial-3 content-area-21">
+            <div class="container">
+                <!-- Main title    
+                <div class="section-header sh-two d-flex">
+                    <h2 data-title="What Clients Say"> Our Testimonial</h2>
+                </div>
+                <div class="featured-slider row slide-box-btn slider"
+                    data-slick='{"slidesToShow": 2, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 1}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+                    <div class="slide slide-box">
+                        <div class="testimonial-item-new">
+                            <div class="author-img fix">
+                                <div class="author-avatar">
+                                    <img src="img/avatar/avatar-team1.jpg" alt="testimonial-5">
+                                    <div class="icon">
+                                        <i class="fa fa-quote-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="author-content">
+                                <h5 class="left-line pl-40">Somalia Silva, <span class="desig">Manager</span></h5>
+                            </div>
+                            <p>But I must explain to you how all this mistake denouncing pleasure and praising pain was
+                                born
+                                and I will give you a complete account of the system, and expound the actual</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-full"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-box">
+                        <div class="testimonial-item-new">
+                            <div class="author-img fix">
+                                <div class="author-avatar">
+                                    <img src="img/avatar/avatar-team2.jpg" alt="testimonial-5">
+                                    <div class="icon">
+                                        <i class="fa fa-quote-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="author-content">
+                                <h5 class="left-line pl-40">Michelle Nelson, <span class="desig">Consultant</span></h5>
+                            </div>
+                            <p>But I must explain to you how all this mistake denouncing pleasure and praising pain was
+                                born
+                                and I will give you a complete account of the system, and expound the actual</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-full"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-box">
+                        <div class="testimonial-item-new">
+                            <div class="author-img fix">
+                                <div class="author-avatar">
+                                    <img src="img/avatar/avatar-team5.jpg" alt="testimonial-5">
+                                    <div class="icon">
+                                        <i class="fa fa-quote-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="author-content">
+                                <h5 class="left-line pl-40">Carolyn Stone, <span class="desig">Designer</span></h5>
+                            </div>
+                            <p>But I must explain to you how all this mistake denouncing pleasure and praising pain was
+                                born
+                                and I will give you a complete account of the system, and expound the actual</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-full"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Testimonial 3 end -->
+
+
+        <!-- Our team start -->
+        <!-- <div class="our-team content-area-21">
+            <div class="container">
+                <!-- Main title 
+                <div class="section-header d-flex">
+                    <h2 data-title="Executive Team"> Our Team</h2>
+                </div>
+                <div class="featured-slider row slide-box-btn slider"
+                    data-slick='{"slidesToShow": 4, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+                    <div class="slide slide-box">
+                        <div class="team-3">
+                            <div class="team-thumb">
+                                <a href="#">
+                                    <img src="img/avatar/avatar-team1.jpg" alt="agent-2" class="img-fluid">
+                                </a>
+                                <div class="team-social flex-middle">
+                                    <div class="team-overlay"></div>
+                                    <div class="team-social-inner">
+                                        <a rel="nofollow" href="#" class="facebook">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                        <a rel="nofollow" href="#" class="twitter">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                        <a rel="nofollow" href="#" class="google">
+                                            <i class="fa fa-google" aria-hidden="true"></i>
+                                        </a>
+                                        <a rel="nofollow" href="#" class="linkedin">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h4>
+                                    <a href="agent-detail.html">John Pitarshon</a>
+                                </h4>
+                                <p>Creative Director</p>
+                                <p class="mb-0"><a href="tel:+55-417-634-7071">+65 8999 4888</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-box">
+                        <div class="team-3">
+                            <div class="team-thumb">
+                                <a href="#">
+                                    <img src="img/avatar/avatar-team2.jpg" alt="team-3" class="img-fluid">
+                                </a>
+                                <div class="team-social flex-middle">
+                                    <div class="team-overlay"></div>
+                                    <div class="team-social-inner">
+                                        <a rel="nofollow" href="#" class="facebook">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                        <a rel="nofollow" href="#" class="twitter">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                        <a rel="nofollow" href="#" class="google">
+                                            <i class="fa fa-google" aria-hidden="true"></i>
+                                        </a>
+                                        <a rel="nofollow" href="#" class="linkedin">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h4>
+                                    <a href="agent-detail.html">Michelle Nelson</a>
+                                </h4>
+                                <p>Support Manager</p>
+                                <p class="mb-0"><a href="tel:+55-417-634-7071">+65 8999 4888</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-box">
+                        <div class="team-3">
+                            <div class="team-thumb">
+                                <a href="#">
+                                    <img src="img/avatar/avatar-team5.jpg" alt="team-3" class="img-fluid">
+                                </a>
+                                <div class="team-social flex-middle">
+                                    <div class="team-overlay"></div>
+                                    <div class="team-social-inner">
+                                        <a rel="nofollow" href="#" class="facebook">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                        <a rel="nofollow" href="#" class="twitter">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                        <a rel="nofollow" href="#" class="google">
+                                            <i class="fa fa-google" aria-hidden="true"></i>
+                                        </a>
+                                        <a rel="nofollow" href="#" class="linkedin">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h4><a href="agent-detail.html">Martin Smith</a></h4>
+                                <p>Web Developer</p>
+                                <p class="mb-0"><a href="tel:+55-417-634-7071">+65 8999 4888</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-box">
+                        <div class="team-3">
+                            <div class="team-thumb">
+                                <a href="#">
+                                    <img src="img/avatar/avatar-team1.jpg" alt="team-3" class="img-fluid">
+                                </a>
+                                <div class="team-social flex-middle">
+                                    <div class="team-overlay"></div>
+                                    <div class="team-social-inner">
+                                        <a rel="nofollow" href="#" class="facebook">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                        <a rel="nofollow" href="#" class="twitter">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                        <a rel="nofollow" href="#" class="google">
+                                            <i class="fa fa-google" aria-hidden="true"></i>
+                                        </a>
+                                        <a rel="nofollow" href="#" class="linkedin">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h4><a href="agent-detail.html">Stone Carolyn</a></h4>
+                                <p>Creative Director</p>
+                                <p class="mb-0"><a href="tel:+55-417-634-7071">+65 8999 4888</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-box">
+                        <div class="team-3">
+                            <div class="team-thumb">
+                                <a href="#">
+                                    <img src="img/avatar/avatar-team5.jpg" alt="team-3" class="img-fluid">
+                                </a>
+                                <div class="team-social flex-middle">
+                                    <div class="team-overlay"></div>
+                                    <div class="team-social-inner">
+                                        <a rel="nofollow" href="#" class="facebook">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                        <a rel="nofollow" href="#" class="twitter">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                        <a rel="nofollow" href="#" class="google">
+                                            <i class="fa fa-google" aria-hidden="true"></i>
+                                        </a>
+                                        <a rel="nofollow" href="#" class="linkedin">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h4><a href="agent-detail.html">Martin Smith</a></h4>
+                                <p>Web Developer</p>
+                                <p class="mb-0"><a href="tel:+55-417-634-7071">+65 8999 4888</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Our team end -->
+
+        <!-- Partners strat -->
+        <!-- <div class="partners">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="custom-slider slide-box-btn">
+                        <div class="custom-box"><img src="img/brand/brand-1.png" alt="brand" class="img-fluid"></div>
+                        <div class="custom-box"><img src="img/brand/brand-2.png" alt="brand" class="img-fluid"></div>
+                        <div class="custom-box"><img src="img/brand/brand-3.png" alt="brand" class="img-fluid"></div>
+                        <div class="custom-box"><img src="img/brand/brand-4.png" alt="brand" class="img-fluid"></div>
+                        <div class="custom-box"><img src="img/brand/brand-1.png" alt="brand" class="img-fluid"></div>
+                        <div class="custom-box"><img src="img/brand/brand-2.png" alt="brand" class="img-fluid"></div>
+                        <div class="custom-box"><img src="img/brand/brand-3.png" alt="brand" class="img-fluid"></div>
+                        <div class="custom-box"><img src="img/brand/brand-4.png" alt="brand" class="img-fluid"></div>
+                        <div class="custom-box"><img src="img/brand/brand-1.png" alt="brand" class="img-fluid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+        <!-- Partners end -->
+        <section id="shopify-section-template--22808565252392__testimonial_2_CjUX4B"
+            class="shopify-section js-section-testimonial-2-carousel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="section-heading-Center">
+                            <div class="section-subtitle">Testimonials</div>
+                            <h2 class="section-title">Client Reviews</h2>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="testimonial-items js-slick-carousel slick-initialized slick-slider slick-dotted"
+                            data-arrows="false" data-draggable="true" data-dots="true" data-infinite="true"
+                            data-autoplay="false" data-speed="3000" data-slidestoshow="3,2,1">
+                            <div class="slick-list draggable">
+                                <div class="slick-track"
+                                    style="opacity: 1; width: 4521px; transform: translate3d(-1644px, 0px, 0px);">
+                                    <div class="slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true"
+                                        style="width: 411px;" tabindex="-1">
+                                        <div>
+                                            <div class="testimonial-item" style="width: 100%; display: inline-block;">
+                                                <div class="testimonial-content-wrap">
+                                                    <h5 class="title"></h5>
+                                                    <div class="testimonial-item__rating rating-5">
+                                                        <span class="star-rating"></span>
+                                                    </div>
+                                                    <div class="testimonial-item__desc">
+                                                        <p>Best cake I’ve ever had! The flavors were perfect, and the
+                                                            design was stunning too. Will definitely order again!</p>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-item__info-wrp"><img class=" lazyloaded"
+                                                        src="img/avatar/avatar-team1.jpg"
+                                                        data-src="//caklious-theme.myshopify.com/cdn/shop/files/testimonials-2.webp?v=1719248952"
+                                                        alt="" height="" width="" loading="lazy">
+                                                    <div class="testimonial-item__info">
+                                                        <h6 class="testimonial-item__name">Noah Lewis</h6>
+                                                        <div class="testimonial-item__designation">CTO</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true"
+                                        style="width: 411px;" tabindex="-1">
+                                        <div>
+                                            <div class="testimonial-item" style="width: 100%; display: inline-block;">
+                                                <div class="testimonial-content-wrap">
+                                                    <h5 class="title"></h5>
+                                                    <div class="testimonial-item__rating rating-4-5">
+                                                        <span class="star-rating"></span>
+                                                    </div>
+                                                    <div class="testimonial-item__desc">
+                                                        <p>Amazing tasty cakes and Incredible service too! They truly
+                                                            went above and beyond for my daughter's birthday.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-item__info-wrp"><img class=" lazyloaded"
+                                                        src="img/cakes/cake2.jpg"
+                                                        data-src="//caklious-theme.myshopify.com/cdn/shop/files/testimonials-3.webp?v=1719248962"
+                                                        alt="" height="" width="" loading="lazy">
+                                                    <div class="testimonial-item__info">
+                                                        <h6 class="testimonial-item__name">Oliver</h6>
+                                                        <div class="testimonial-item__designation">Manager</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true"
+                                        style="width: 411px;" tabindex="-1">
+                                        <div>
+                                            <div class="testimonial-item" style="width: 100%; display: inline-block;">
+                                                <div class="testimonial-content-wrap">
+                                                    <h5 class="title"></h5>
+                                                    <div class="testimonial-item__rating rating-5">
+                                                        <span class="star-rating"></span>
+                                                    </div>
+                                                    <div class="testimonial-item__desc">
+                                                        <p>Fantastic and gorgeous cakes and excellent customer service.
+                                                            The cake was the highlight of our event celebration!</p>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-item__info-wrp"><img class=" lazyloaded"
+                                                        src="img/avatar/avatar-team5.jpg"
+                                                        data-src="//caklious-theme.myshopify.com/cdn/shop/files/testimonials-4.webp?v=1719248973"
+                                                        alt="" height="" width="" loading="lazy">
+                                                    <div class="testimonial-item__info">
+                                                        <h6 class="testimonial-item__name">Elijah Vance</h6>
+                                                        <div class="testimonial-item__designation">Designer</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide" data-slick-index="0" aria-hidden="true"
+                                        style="width: 411px;" tabindex="-1" role="tabpanel" id="slick-slide30"
+                                        aria-describedby="slick-slide-control30">
+                                        <div>
+                                            <div class="testimonial-item" style="width: 100%; display: inline-block;">
+                                                <div class="testimonial-content-wrap">
+                                                    <h5 class="title"></h5>
+                                                    <div class="testimonial-item__rating rating-4-5">
+                                                        <span class="star-rating"></span>
+                                                    </div>
+                                                    <div class="testimonial-item__desc">
+                                                        <p>Absolutely delicious cake and beautifully decorated! It made
+                                                            our celebration extra special. Highly recommend!</p>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-item__info-wrp"><img class=" lazyloaded"
+                                                        src="img/avatar/avatar-team4.jpg"
+                                                        data-src="//caklious-theme.myshopify.com/cdn/shop/files/testimonials-1.webp?v=1719248940"
+                                                        alt="" height="" width="" loading="lazy">
+                                                    <div class="testimonial-item__info">
+                                                        <h6 class="testimonial-item__name">Liam Taylor</h6>
+                                                        <div class="testimonial-item__designation">CEO</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-current slick-active" data-slick-index="1"
+                                        aria-hidden="false" style="width: 411px;" role="tabpanel" id="slick-slide31"
+                                        aria-describedby="slick-slide-control31">
+                                        <div>
+                                            <div class="testimonial-item" style="width: 100%; display: inline-block;">
+                                                <div class="testimonial-content-wrap">
+                                                    <h5 class="title"></h5>
+                                                    <div class="testimonial-item__rating rating-5">
+                                                        <span class="star-rating"></span>
+                                                    </div>
+                                                    <div class="testimonial-item__desc">
+                                                        <p>Best cake I’ve ever had! The flavors were perfect, and the
+                                                            design was stunning too. Will definitely order again!</p>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-item__info-wrp"><img class=" lazyloaded"
+                                                        src="img/avatar/avatar-team3.jpg" data-src="" alt="" height=""
+                                                        width="" loading="lazy">
+                                                    <div class="testimonial-item__info">
+                                                        <h6 class="testimonial-item__name">Noah Lewis</h6>
+                                                        <div class="testimonial-item__designation">CTO</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false"
+                                        style="width: 411px;" role="tabpanel" id="slick-slide32"
+                                        aria-describedby="slick-slide-control32">
+                                        <div>
+                                            <div class="testimonial-item" style="width: 100%; display: inline-block;">
+                                                <div class="testimonial-content-wrap">
+                                                    <h5 class="title"></h5>
+                                                    <div class="testimonial-item__rating rating-4-5">
+                                                        <span class="star-rating"></span>
+                                                    </div>
+                                                    <div class="testimonial-item__desc">
+                                                        <p>Amazing tasty cakes and Incredible service too! They truly
+                                                            went above and beyond for my daughter's birthday.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-item__info-wrp"><img class=" lazyloaded"
+                                                        src="img/avatar/avatar-team2.jpg"
+                                                        data-src="//caklious-theme.myshopify.com/cdn/shop/files/testimonials-3.webp?v=1719248962"
+                                                        alt="" height="" width="" loading="lazy">
+                                                    <div class="testimonial-item__info">
+                                                        <h6 class="testimonial-item__name">Oliver</h6>
+                                                        <div class="testimonial-item__designation">Manager</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false"
+                                        style="width: 411px;" role="tabpanel" id="slick-slide33"
+                                        aria-describedby="slick-slide-control33">
+                                        <div>
+                                            <div class="testimonial-item" style="width: 100%; display: inline-block;">
+                                                <div class="testimonial-content-wrap">
+                                                    <h5 class="title"></h5>
+                                                    <div class="testimonial-item__rating rating-5">
+                                                        <span class="star-rating"></span>
+                                                    </div>
+                                                    <div class="testimonial-item__desc">
+                                                        <p>Fantastic and gorgeous cakes and excellent customer service.
+                                                            The cake was the highlight of our event celebration!</p>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-item__info-wrp"><img class=" lazyloaded"
+                                                        src="img/avatar/avatar-team1.jpg" alt="" height="" width=""
+                                                        loading="lazy">
+                                                    <div class="testimonial-item__info">
+                                                        <h6 class="testimonial-item__name">Elijah Vance</h6>
+                                                        <div class="testimonial-item__designation">Designer</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true"
+                                        style="width: 411px;" tabindex="-1">
+                                        <div>
+                                            <div class="testimonial-item" style="width: 100%; display: inline-block;">
+                                                <div class="testimonial-content-wrap">
+                                                    <h5 class="title"></h5>
+                                                    <div class="testimonial-item__rating rating-4-5">
+                                                        <span class="star-rating"></span>
+                                                    </div>
+                                                    <div class="testimonial-item__desc">
+                                                        <p>Absolutely delicious cake and beautifully decorated! It made
+                                                            our celebration extra special. Highly recommend!</p>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-item__info-wrp"><img class=" lazyloaded"
+                                                        src="img/avatar/avatar-team5.jpg" alt="" height="" width=""
+                                                        loading="lazy">
+                                                    <div class="testimonial-item__info">
+                                                        <h6 class="testimonial-item__name">Liam Taylor</h6>
+                                                        <div class="testimonial-item__designation">CEO</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true"
+                                        style="width: 411px;" tabindex="-1">
+                                        <div>
+                                            <div class="testimonial-item" style="width: 100%; display: inline-block;">
+                                                <div class="testimonial-content-wrap">
+                                                    <h5 class="title"></h5>
+                                                    <div class="testimonial-item__rating rating-5">
+                                                        <span class="star-rating"></span>
+                                                    </div>
+                                                    <div class="testimonial-item__desc">
+                                                        <p>Best cake I’ve ever had! The flavors were perfect, and the
+                                                            design was stunning too. Will definitely order again!</p>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-item__info-wrp"><img class=" lazyloaded"
+                                                        src="img/avatar/avatar-team4.jpg" alt="" height="" width=""
+                                                        loading="lazy">
+                                                    <div class="testimonial-item__info">
+                                                        <h6 class="testimonial-item__name">Noah Lewis</h6>
+                                                        <div class="testimonial-item__designation">CTO</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true"
+                                        style="width: 411px;" tabindex="-1">
+                                        <div>
+                                            <div class="testimonial-item" style="width: 100%; display: inline-block;">
+                                                <div class="testimonial-content-wrap">
+                                                    <h5 class="title"></h5>
+                                                    <div class="testimonial-item__rating rating-4-5">
+                                                        <span class="star-rating"></span>
+                                                    </div>
+                                                    <div class="testimonial-item__desc">
+                                                        <p>Amazing tasty cakes and Incredible service too! They truly
+                                                            went above and beyond for my daughter's birthday.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-item__info-wrp"><img class=" lazyloaded"
+                                                        src="img/avatar/avatar-team3.jpg" alt="" height="" width=""
+                                                        loading="lazy">
+                                                    <div class="testimonial-item__info">
+                                                        <h6 class="testimonial-item__name">Oliver</h6>
+                                                        <div class="testimonial-item__designation">Manager</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true"
+                                        style="width: 411px;" tabindex="-1">
+                                        <div>
+                                            <div class="testimonial-item" style="width: 100%; display: inline-block;">
+                                                <div class="testimonial-content-wrap">
+                                                    <h5 class="title"></h5>
+                                                    <div class="testimonial-item__rating rating-5">
+                                                        <span class="star-rating"></span>
+                                                    </div>
+                                                    <div class="testimonial-item__desc">
+                                                        <p>Fantastic and gorgeous cakes and excellent customer service.
+                                                            The cake was the highlight of our event celebration!</p>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-item__info-wrp"><img class=" lazyloaded"
+                                                        src="img/avatar/avatar-team2.jpg" alt="" height="" width=""
+                                                        loading="lazy">
+                                                    <div class="testimonial-item__info">
+                                                        <h6 class="testimonial-item__name">Elijah Vance</h6>
+                                                        <div class="testimonial-item__designation">Designer</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="slick-dots" style="" role="tablist">
+                                <li class="" role="presentation"><button type="button" role="tab"
+                                        id="slick-slide-control30" aria-controls="slick-slide30" aria-label="1 of 2"
+                                        tabindex="-1">1</button></li>
+                                <li class="slick-active" role="presentation"><button type="button" role="tab"
+                                        id="slick-slide-control31" aria-controls="slick-slide31" aria-label="2 of 2"
+                                        tabindex="0" aria-selected="true">2</button></li>
+                                <li role="presentation"><button type="button" role="tab" id="slick-slide-control32"
+                                        aria-controls="slick-slide32" aria-label="3 of 2" tabindex="-1">3</button></li>
+                                <li role="presentation"><button type="button" role="tab" id="slick-slide-control33"
+                                        aria-controls="slick-slide33" aria-label="4 of 2" tabindex="-1">4</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <style data-shopify="">
+                /* Testimonials */
+                .js-section-testimonial-2-carousel .slick-list {
+                    margin-left: -15px;
+                    margin-right: -15px;
+                }
+
+                .js-section-testimonial-2-carousel .slick-slide {
+                    padding: 15px;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item {
+                    position: relative;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .title {
+                    color: var(--color_primary);
+                    font-size: var(--fontsize_H5);
+                    margin: 10px 0;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .title+.testimonial-item__rating {
+                    margin-top: 0;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__info-wrp {
+                    display: flex;
+                    margin: 30px auto 0;
+                    align-items: center;
+                    justify-content: start;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-content-wrap {
+                    position: relative;
+                    transition: 0.3s;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-content-wrap .testimonial-item__desc {
+                    position: relative;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-content-wrap .testimonial-item__desc:before {
+                    color: var(--color_button_bg_primary);
+                    content: "\275B \275B";
+                    display: inline-block;
+                    font-size: 5em;
+                    height: 0.5em;
+                    line-height: 1;
+                    letter-spacing: -0.05em;
+                    margin: 5px;
+                    opacity: 0.35;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 0.5em;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-content-wrap:after {
+                    background-color: inherit;
+                    content: "";
+                    height: 14px;
+                    margin-top: -1px;
+                    position: absolute;
+                    left: 25px;
+                    top: 100%;
+                    width: 14px;
+                    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+                    clip-path: polygon(0 0, 0% 100%, 100% 0);
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__info-wrp img {
+                    width: 60px;
+                    height: 60px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__info-wrp img+.testimonial-item__info {
+                    margin-left: 10px;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__info {
+                    text-align: left;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__desc {
+                    margin: 0 auto;
+                    position: relative;
+                    width: 100%;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__desc p {
+                    margin-bottom: 10px;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__desc>*:last-child {
+                    margin-bottom: 0;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__info .testimonial-item__name {
+                    font-weight: var(--fontweight_heading);
+                    margin: 0;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__info .testimonial-item__designation {
+                    margin-top: 4px;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__rating {
+                    display: block;
+                    margin: 10px 0;
+                    position: relative;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__rating.none {
+                    display: none;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__rating>span.star-rating {
+                    display: inline-grid;
+                    font-size: var(--fontsize_H6);
+                    height: 1em;
+                    line-height: 1em;
+                    position: relative;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__rating>span.star-rating:before,
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__rating>span.star-rating:after {
+                    color: var(--color_button_bg_primary);
+                    content: "";
+                    grid-area: 1/-1;
+                    height: 1em;
+                    vertical-align: top;
+                    width: auto;
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__rating>span.star-rating:before {
+                    content: "\2606 \2606 \2606 \2606 \2606";
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__rating>span.star-rating:after {
+                    content: "\2605 \2605 \2605 \2605 \2605";
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__rating.rating-1>span.star-rating:after {
+                    -webkit-clip-path: inset(0 80% 0 0);
+                    clip-path: inset(0 80% 0 0);
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__rating.rating-2>span.star-rating:after {
+                    -webkit-clip-path: inset(0 60% 0 0);
+                    clip-path: inset(0 60% 0 0);
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__rating.rating-3>span.star-rating:after {
+                    -webkit-clip-path: inset(0 40% 0 0);
+                    clip-path: inset(0 40% 0 0);
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__rating.rating-4>span.star-rating:after {
+                    -webkit-clip-path: inset(0 20% 0 0);
+                    clip-path: inset(0 20% 0 0);
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__rating.rating-1-5>span.star-rating:after {
+                    -webkit-clip-path: inset(0 70% 0 0);
+                    clip-path: inset(0 70% 0 0);
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__rating.rating-2-5>span.star-rating:after {
+                    -webkit-clip-path: inset(0 50% 0 0);
+                    clip-path: inset(0 10% 0 0);
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__rating.rating-3-5>span.star-rating:after {
+                    -webkit-clip-path: inset(0 30% 0 0);
+                    clip-path: inset(0 30% 0 0);
+                }
+
+                .js-section-testimonial-2-carousel .testimonial-item .testimonial-item__rating.rating-4-5>span.star-rating:after {
+                    -webkit-clip-path: inset(0 10% 0 0);
+                    clip-path: inset(0 10% 0 0);
+                }
+
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .section-heading-Center {
+                    text-align: center;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .section-heading-Left {
+                    text-align: left;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .section-heading-Right {
+                    text-align: right;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .section-title {
+                    color: #000222;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .section-subtitle {
+                    color: #ce8606;
+                }
+
+
+                /***********/
+                /* Carousel Arrows & Dot Pagination */
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider .slick-dots {
+                    text-align: center;
+                    margin: 35px 0 0;
+                    padding: 0;
+                    position: relative;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider .slick-dots li {
+                    display: inline-block;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider.slick-dotted .slick-dots li button {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    font-size: 0;
+                    margin: 0 3px;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: transparent;
+                    border: 1px solid transparent;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider.slick-dotted .slick-dots li button:before {
+                    background-color: transparent;
+                    border: 1px solid currentColor;
+                    color: var(--color_primary);
+                    content: "";
+                    display: block;
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 50%;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider button[class*="slick-"] {
+                    border-color: transparent;
+                    display: flex;
+                    font-size: 0;
+                    align-items: center;
+                    justify-content: center;
+                    height: 40px;
+                    margin: 0;
+                    padding: 0;
+                    position: absolute;
+                    left: 20px;
+                    top: 50%;
+                    width: 40px;
+                    z-index: 9;
+                    transform: translateY(-100%);
+                    border-radius: 50%;
+                    transition: var(--site_transition);
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider button.slick-next {
+                    left: auto;
+                    right: 20px;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider button[class*="slick-"]:before {
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    display: block;
+                    transform: rotate(135deg);
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider button.slick-prev:before {
+                    left: 3px;
+                    position: relative;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider button.slick-next:before {
+                    right: 3px;
+                    position: relative;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider button.slick-prev:before {
+                    border-right: 1px solid currentColor;
+                    border-bottom: 1px solid currentColor;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider button.slick-next:before {
+                    border-left: 1px solid currentColor;
+                    border-top: 1px solid currentColor;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider button[class*="slick-"]:before {
+                    color: var(--color_button_primary);
+                    color: ;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider button[class*="slick-"]:hover:before {
+                    color: var(--color_button_primary_hover);
+                    color: ;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider button[class*="slick-"] {
+                    background-color: var(--color_button_bg_primary);
+                    background-color: ;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider button[class*="slick-"]:hover {
+                    background-color: var(--color_button_bg_primary_hover);
+                    background-color: ;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .js-section-slider ul.slick-dots button:before,
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider.slick-dotted .slick-dots li button:before {
+                    color: var(--color_primary);
+                    color: #000222;
+                    border-color: currentColor;
+                }
+
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .js-section-slider ul.slick-dots li:hover button,
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider.slick-dotted .slick-dots li:hover button,
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .js-section-slider ul.slick-dots li.slick-active button,
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider.slick-dotted .slick-dots li.slick-active button {
+                    border-color: currentColor;
+                }
+
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .js-section-slider ul.slick-dots li.slick-active button:before,
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider.slick-dotted .slick-dots li.slick-active button:before {
+                    background-color: currentColor;
+                    border-color: transparent;
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .js-section-slider ul.slick-dots li:hover button,
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider.slick-dotted .slick-dots li:hover button,
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .js-section-slider ul.slick-dots li.slick-active button,
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider.slick-dotted .slick-dots li.slick-active button,
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .js-section-slider ul.slick-dots li:hover button:before,
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider.slick-dotted .slick-dots li:hover button:before,
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .js-section-slider ul.slick-dots li.slick-active button:before,
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slider.slick-dotted .slick-dots li.slick-active button:before {
+                    color: var(--color_accent);
+                    color: #f8b500;
+                }
+
+
+                /*-*/
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B {
+                    padding-top: 100px;
+                    padding-bottom: 100px;
+                }
+
+                @media (min-width: 768px) and (max-width: 991px) {
+                    #shopify-section-template--22808565252392__testimonial_2_CjUX4B {}
+                }
+
+                @media (max-width: 767px) {
+                    #shopify-section-template--22808565252392__testimonial_2_CjUX4B {
+                        padding-top: 50px;
+                        padding-bottom: 50px;
+                    }
+                }
+
+                #shopify-section-template--22808565252392__testimonial_2_CjUX4B .slick-slide .testimonial-content-wrap {
+                    border-radius: var(--border_radius);
+                    background-color: #f4ead8;
+                    padding: 35px 25px;
+                }
+            </style>
+        </section>
+        <!-- Shipping -->
+        <section id="shopify-section-template--22808565252392__icon_box_VzLq4i"
+            class="shopify-section icon-box-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div id="block-id-icon_box_LYKwPe" class="icon-box aside text-align-start ">
+                            <div class="icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M471.5,240.2h-49.6v-53.9c0-4.1-3.3-7.4-7.4-7.4s-7.4,3.3-7.4,7.4v61.3c0,4.1,3.3,7.4,7.4,7.4h57c4.1,0,7.4-3.3,7.4-7.4s-3.3-7.4-7.4-7.4Z"
+                                        style="fill: currentColor; stroke-width: 0;"></path>
+                                    <path
+                                        d="M157.2,258.5c0-4.1-3.3-7.4-7.4-7.4H13.4c-4.1,0-7.4,3.3-7.4,7.4s3.3,7.4,7.4,7.4h136.4c4.1,0,7.4-3.3,7.4-7.4Z"
+                                        style="fill: currentColor; stroke-width: 0;"></path>
+                                    <path
+                                        d="M58.8,218.7h136.4c4.1,0,7.4-3.3,7.4-7.4s-3.3-7.4-7.4-7.4H58.8c-4.1,0-7.4,3.3-7.4,7.4s3.3,7.4,7.4,7.4Z"
+                                        style="fill: currentColor; stroke-width: 0;"></path>
+                                    <path
+                                        d="M503.2,239.2l-38.6-71.6c-4.1-7.5-11.9-12.2-20.5-12.2h-77.1c-3,0-5.8.6-8.5,1.6v-7.8c0-12.8-10.5-23.3-23.3-23.3H106.1c-12.8,0-23.3,10.5-23.3,23.3v29.9c0,4.1,3.3,7.4,7.4,7.4s7.4-3.3,7.4-7.4v-29.9c0-4.7,3.8-8.5,8.5-8.5h229.1c4.7,0,8.5,3.8,8.5,8.4v171.4c0,4.7-3.8,8.5-8.5,8.5h-97.4c-3.6-23.9-24.2-42.2-49-42.2s-45.4,18.4-49,42.2h-33.2c-4.7,0-8.5-3.8-8.5-8.5v-28.5c0-4.1-3.3-7.4-7.4-7.4s-7.4,3.3-7.4,7.4v28.5c0,12.8,10.5,23.3,23.3,23.3h33.2c3.6,23.9,24.2,42.2,49,42.2s45.4-18.4,49-42.2h97.4c6.1,0,11.7-2.4,15.9-6.3,4.2,3.9,9.7,6.3,15.9,6.3h8.9c3.6,23.9,24.2,42.2,49,42.2s45.4-18.4,49-42.2h8.9c12.8,0,23.3-10.5,23.3-23.3v-70.3c0-3.8-1-7.7-2.8-11ZM223.5,337.1c-.3,18.9-15.8,34.2-34.7,34.2s-34.8-15.6-34.8-34.8,15.6-34.8,34.8-34.8,34.4,15.3,34.7,34.2c0,.2-.1.4-.1.6s.1.4.1.6ZM424.8,371.3c-19.2,0-34.8-15.6-34.8-34.8s15.6-34.8,34.8-34.8,34.8,15.6,34.8,34.8-15.6,34.8-34.8,34.8ZM491.2,320.6c0,4.7-3.8,8.5-8.5,8.5h-8.9c-3.6-23.9-24.2-42.2-49-42.2s-45.4,18.4-49,42.2h-8.9c-4.7,0-8.5-3.8-8.5-8.5v-141.9c0-4.7,3.8-8.5,8.5-8.5h77.1c3.1,0,6,1.7,7.5,4.4l38.6,71.6c.7,1.2,1,2.6,1,4v70.3Z"
+                                        style="fill: currentColor; stroke-width: 0;"></path>
+                                </svg>
+                            </div>
+                            <div class="icon-content">
+                                <div class="subtext"><small></small></div>
+                                <h5 class="heading">Free Shipping</h5>
+                                <p class="description">Each purchase over $199 are eligible for free shipping.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div id="block-id-icon_box_WVwmzY" class="icon-box aside text-align-start ">
+                            <div class="icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.5 512">
+                                    <path
+                                        d="M116.1,315.4c0,3.2,1.7,6.1,4.4,7.6l114.9,66.3c.2.1.4.2.7.3.2.1.5.2.7.3,1,.4,2,.6,3,.6s2.1-.2,3-.6c.2,0,.5-.2.7-.3.2-.1.4-.1.7-.3l114.9-66.3c2.7-1.6,4.4-4.5,4.4-7.6v-111.7c0-.2,0-.5,0-.7,0-.3,0-.5-.1-.8-.2-1-.5-2-1-2.9,0,0,0,0,0,0s0,0,0,0c-.5-.9-1.2-1.6-2-2.3-.2-.2-.4-.3-.6-.5-.2-.1-.4-.3-.6-.4l-114.9-66.3c-2.7-1.6-6.1-1.6-8.8,0l-114.9,66.3c-.2.1-.4.3-.6.4-.2.2-.4.3-.6.5-.8.7-1.5,1.4-2,2.3,0,0,0,0,0,0,0,0,0,0,0,0-.5.9-.8,1.9-1,2.9,0,.3,0,.5-.1.8,0,.2,0,.5,0,.7v111.7ZM133.8,218.9l97.3,56.2v91.3l-97.3-56.2v-91.3ZM182.4,180.7l97.3,56.2-39.8,23-97.3-56.2,39.8-23ZM248.7,366.4v-91.3l53-30.6s0,0,0,0l44.3-25.6v91.3l-97.3,56.2ZM239.9,147.5l97.3,56.2-39.8,23-97.3-56.2,39.8-23Z"
+                                        style="fill: currentColor; stroke-width: 0;"></path>
+                                    <path
+                                        d="M70,165.9c.1.7.4,1.4.7,2,.2.3.3.7.5,1,.4.6.8,1.1,1.3,1.6.3.3.5.5.8.7.3.2.5.6.9.8.3.2.6.2,1,.3.3.1.7.2,1,.3.7.2,1.4.4,2.2.4.1,0,.2,0,.3,0,.4,0,.8,0,1.2,0l60.3-8.3c4.8-.7,8.2-5.1,7.5-9.9-.7-4.8-5.1-8.2-9.9-7.5l-41.1,5.7c51.8-70.8,150-92.8,227.6-48,83.2,48,111.8,154.8,63.8,238-48,83.2-154.4,112-237.2,64.2-4.2-2.4-9.6-1-12.1,3.2-2.4,4.2-1,9.6,3.2,12.1,29.3,16.9,61.9,25.6,94.8,25.6s33.7-2.2,50.3-6.8c49.3-13.4,90.5-45.2,116.1-89.5,52.9-91.6,21.4-209.2-70.2-262.1-84.7-48.9-191.4-25.5-248.9,50.6l-5.2-37.4c-.7-4.8-5.1-8.2-9.9-7.5-4.8.7-8.2,5.1-7.5,9.9l8.3,60.3c0,.1.1.2.1.4Z"
+                                        style="fill: currentColor; stroke-width: 0;"></path>
+                                </svg>
+                            </div>
+                            <div class="icon-content">
+                                <div class="subtext"><small></small></div>
+                                <h5 class="heading">Easy Returns</h5>
+                                <p class="description">30 days warranty for each product from our store</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div id="block-id-icon_box_q3kcwa" class="icon-box aside text-align-start ">
+                            <div class="icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    viewBox="0 0 512 410.6">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M399.8,230.6c-2.7,0-4.9-2.2-4.9-4.9v-30.3c0-2.7,2.2-4.9,4.9-4.9s4.9,2.2,4.9,4.9v30.3c0,2.7-2.2,4.9-4.9,4.9Z"
+                                                style="fill: currentColor; stroke: currentColor; stroke-miterlimit: 10; stroke-width: 4px;">
+                                            </path>
+                                            <path
+                                                d="M322.1,230.6c-2.7,0-4.9-2.2-4.9-4.9v-30.3c0-2.7,2.2-4.9,4.9-4.9s4.9,2.2,4.9,4.9v30.3c0,2.7-2.2,4.9-4.9,4.9Z"
+                                                style="fill: currentColor; stroke: currentColor; stroke-miterlimit: 10; stroke-width: 4px;">
+                                            </path>
+                                        </g>
+                                        <path
+                                            d="M399.8,200.3c-2.7,0-4.9-2.2-4.9-4.9,0-18.7-15.2-34-34-34s-34,15.2-34,34-2.2,4.9-4.9,4.9-4.9-2.2-4.9-4.9c0-24.1,19.6-43.7,43.7-43.7s43.7,19.6,43.7,43.7-2.2,4.9-4.9,4.9Z"
+                                            style="fill: currentColor; stroke: currentColor; stroke-miterlimit: 10; stroke-width: 4px;">
+                                        </path>
+                                        <path
+                                            d="M426.5,358.9h-131c-11.7,0-21.3-9.6-21.3-21.3v-95.5c0-11.7,9.6-21.3,21.3-21.3h131c11.7,0,21.3,9.6,21.3,21.3v95.5c0,11.7-9.6,21.3-21.3,21.3ZM295.5,230.6c-6.4,0-11.5,5.2-11.5,11.5v95.5c0,6.4,5.2,11.5,11.5,11.5h131c6.4,0,11.5-5.2,11.5-11.5v-95.5c0-6.4-5.2-11.5-11.5-11.5h-131Z"
+                                            style="fill: currentColor; stroke: currentColor; stroke-miterlimit: 10; stroke-width: 4px;">
+                                        </path>
+                                        <path
+                                            d="M361,306.3c-2.7,0-4.9-2.2-4.9-4.9v-23.1c0-2.7,2.2-4.9,4.9-4.9s4.9,2.2,4.9,4.9v23.1c0,2.7-2.2,4.9-4.9,4.9Z"
+                                            style="fill: currentColor; stroke: currentColor; stroke-miterlimit: 10; stroke-width: 4px;">
+                                        </path>
+                                    </g>
+                                    <g>
+                                        <path
+                                            d="M442.9,126.9H68.6c-2.7,0-4.9-2.2-4.9-4.9s2.2-4.9,4.9-4.9h374.2c2.7,0,4.9,2.2,4.9,4.9s-2.2,4.9-4.9,4.9Z"
+                                            style="fill: currentColor; stroke: currentColor; stroke-miterlimit: 10; stroke-width: 4px;">
+                                        </path>
+                                        <path
+                                            d="M244.4,322.8H96.7c-18.2,0-32.9-14.6-32.9-32.5V83.7c0-17.9,14.8-32.5,32.9-32.5h318.1c18.2,0,33,14.6,33,32.5v113.1c0,2.7-2.2,4.9-4.9,4.9s-4.9-2.2-4.9-4.9v-113.1c0-12.5-10.4-22.7-23.2-22.7H96.7c-12.8,0-23.2,10.2-23.2,22.7v206.6c0,12.5,10.4,22.7,23.2,22.7h147.7c2.7,0,4.9,2.2,4.9,4.9s-2.2,4.9-4.9,4.9Z"
+                                            style="fill: currentColor; stroke: currentColor; stroke-miterlimit: 10; stroke-width: 4px;">
+                                        </path>
+                                        <path
+                                            d="M138.2,282.5h-23.1c-2.7,0-4.9-2.2-4.9-4.9s2.2-4.9,4.9-4.9h23.1c2.7,0,4.9,2.2,4.9,4.9s-2.2,4.9-4.9,4.9Z"
+                                            style="fill: currentColor; stroke: currentColor; stroke-miterlimit: 10; stroke-width: 4px;">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="icon-content">
+                                <div class="subtext">
+                                    <small></small>
+                                </div>
+                                <h5 class="heading">Safe Payouts</h5>
+                                <p class="description">All payments processed via secure payment protocol.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style data-shopify="">
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .section-heading-Center,
+                .icon-box.text-align-center {
+                    text-align: center;
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .section-heading-Left,
+                .icon-box.text-align-left {
+                    text-align: left;
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .section-heading-Right,
+                .icon-box.text-align-right {
+                    text-align: right;
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .section-title {
+                    color: ;
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i {
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                    background-color: rgba(0, 0, 0, 0);
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i {
+                    position: relative;
+                    z-index: 0;
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i:before {
+                    background-color: #f8b500;
+                    ;
+                    content: '';
+                    opacity: 0.7;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    z-index: -1;
+                    border-radius: inherit;
+                }
+
+                /* Icon Boxes */
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .icon-box {
+                    margin: 15px 0;
+                    transition: var(--site_transition);
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .icon-box .icon-content h3 {
+                    margin: 0 0 10px;
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .icon-box .icon-content .description {
+                    max-width: 275px;
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .icon-box.text-align-center .icon-wrap,
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .icon-box.text-align-center .icon-content .description {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .icon-box .icon-wrap {
+                    max-width: 75px;
+                    position: relative;
+                    z-index: 0;
+                    aspect-ratio: 1;
+                    perspective: 100px;
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .icon-box .icon-wrap svg {
+                    height: 100%;
+                    margin-bottom: 0;
+                    width: 100%;
+                    transition: 0.3s;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    -webkit-transform-style: preserve-3d;
+                    transform-style: preserve-3d;
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .icon-box .icon-wrap:before {
+                    background-color: rgb(0, 0, 0, 0.035);
+                    content: "";
+                    height: 100%;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    width: 100%;
+                    z-index: -1;
+                    border-radius: 50%;
+                    transform: translate(-75%, -75%) scale(0.85);
+                    transition: 0.3s;
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .icon-box:hover .icon-wrap:before {
+                    opacity: 0.085;
+                    transform: translate(-50%, -50%) scale(1.1);
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .icon-box:hover .icon-wrap svg {
+                    transform: translateZ(-35px);
+                }
+
+                /*Default Style*/
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .icon-box.default .heading {
+                    margin: 10px 0;
+                }
+
+                @media only screen and (max-width: 1399px) {
+
+                    #shopify-section-template--22808565252392__icon_box_VzLq4i .icon-box.default .heading {
+                        font-size: calc(var(--fontsize_H6) - 2px);
+                    }
+
+                }
+                
+
+                /*aside*/
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .icon-box.aside .icon-wrap {
+                    float: left;
+                    text-align: center;
+                    max-width: 50px;
+                    width: 50px;
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .icon-box.aside .icon-content {
+                    padding-left: 65px;
+                }
+
+                #shopify-section-template--22808565252392__icon_box_VzLq4i .icon-box.aside .icon-content .heading {
+                    font-size: var(--fontsize_H6);
+                    margin: 0;
+                }
+
+
+
+                }
+
+                @media (min-width: 768px) and (max-width: 991px) {
+                    #shopify-section-template--22808565252392__icon_box_VzLq4i {}
+                }
+
+                @media (max-width: 767px) {
+                    #shopify-section-template--22808565252392__icon_box_VzLq4i {}
+
+                }
+
+
+                #block-id-icon_box_LYKwPe.icon-box .heading {
+                    color: #000222;
+                }
+
+                #block-id-icon_box_LYKwPe.icon-box .subtext {
+                    color: #ce8606;
+                }
+
+                #block-id-icon_box_LYKwPe.icon-box .icon-wrap svg {
+                    color: #ce8606;
+                }
+
+                #block-id-icon_box_LYKwPe.icon-box:hover .icon-wrap:before {
+                    background-color: #ce8606;
+                }
+
+                #block-id-icon_box_LYKwPe.icon-box .description {
+                    color: #000222;
+                    margin-top: 8px;
+                    margin-bottom: 0;
+                }
+
+                #block-id-icon_box_LYKwPe.icon-box .button {
+                    background: #222222;
+                    color: #ffffff;
+                }
+
+                #block-id-icon_box_LYKwPe.icon-box .button:hover {
+                    background: #1a1a1a;
+                    color: #ffffff;
+                }
+
+                #block-id-icon_box_LYKwPe.icon-box.default:hover .heading,
+                #block-id-icon_box_LYKwPe.icon-box.default:hover .icon-wrap svg,
+                #block-id-icon_box_LYKwPe.icon-box.default:hover .description {
+                    color: ;
+                }
+
+
+                #block-id-icon_box_WVwmzY.icon-box .heading {
+                    color: #000222;
+                }
+
+                #block-id-icon_box_WVwmzY.icon-box .subtext {
+                    color: #ce8606;
+                }
+
+                #block-id-icon_box_WVwmzY.icon-box .icon-wrap svg {
+                    color: #ce8606;
+                }
+
+                #block-id-icon_box_WVwmzY.icon-box:hover .icon-wrap:before {
+                    background-color: #ce8606;
+                }
+
+                #block-id-icon_box_WVwmzY.icon-box .description {
+                    color: #000222;
+                    margin-top: 8px;
+                    margin-bottom: 0;
+                }
+
+                #block-id-icon_box_WVwmzY.icon-box .button {
+                    background: #222222;
+                    color: #ffffff;
+                }
+
+                #block-id-icon_box_WVwmzY.icon-box .button:hover {
+                    background: #1a1a1a;
+                    color: #ffffff;
+                }
+
+                #block-id-icon_box_WVwmzY.icon-box.default:hover .heading,
+                #block-id-icon_box_WVwmzY.icon-box.default:hover .icon-wrap svg,
+                #block-id-icon_box_WVwmzY.icon-box.default:hover .description {
+                    color: ;
+                }
+
+
+                #block-id-icon_box_q3kcwa.icon-box .heading {
+                    color: #000222;
+                }
+
+                #block-id-icon_box_q3kcwa.icon-box .subtext {
+                    color: #ce8606;
+                }
+
+                #block-id-icon_box_q3kcwa.icon-box .icon-wrap svg {
+                    color: #ce8606;
+                }
+
+                #block-id-icon_box_q3kcwa.icon-box:hover .icon-wrap:before {
+                    background-color: #ce8606;
+                }
+
+                #block-id-icon_box_q3kcwa.icon-box .description {
+                    color: #000222;
+                    margin-top: 8px;
+                    margin-bottom: 0;
+                }
+
+                #block-id-icon_box_q3kcwa.icon-box .button {
+                    background: #222222;
+                    color: #ffffff;
+                }
+
+                #block-id-icon_box_q3kcwa.icon-box .button:hover {
+                    background: #1a1a1a;
+                    color: #ffffff;
+                }
+
+                #block-id-icon_box_q3kcwa.icon-box.default:hover .heading,
+                #block-id-icon_box_q3kcwa.icon-box.default:hover .icon-wrap svg,
+                #block-id-icon_box_q3kcwa.icon-box.default:hover .description {
+                    color: ;
+                }
+            </style>
+            <style>
+                @media screen and (max-width: 767px) {
+                    #shopify-section-template--22808565252392__icon_box_VzLq4i .row {
+                        flex-wrap: nowrap;
+                        overflow: auto;
+                        scrollbar-width: none;
+                        scroll-snap-type: x mandatory;
+                    }
+
+                    #shopify-section-template--22808565252392__icon_box_VzLq4i .row>* {
+                        scroll-snap-align: start;
+                    }
+                }
+            </style>
+        </section>
+        <!-- End of shipping-->
+        <!-- Footer start -->
+        
+        <footer class="main-footer-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="logo-image">
+                            <!-- <a href="#"><img src="img/logos/logo.png" alt="logo" class="f-logo"></a> -->
+                            <h1 style="color: black;">Food Mapping</h1>
+                        </div>
+                        <div class="footer-menu" style="padding-left: 40px;">
+                            <ul>
+                                <li class="li">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="li">
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li class="li">
+                                    <a href="services.html">Services</a>
+                                </li>
+                                <!-- <li class="li">
+                                <a href="https://www.sgcarmart.com/used_cars/listing.php?DL=2690&AVL=2">Shop</a>
+                            </li> -->
+                                <li class="li">
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <h5>Visit Our Store @587 Bukit Timah Road #02-43 Coronation Shopping Plaza, Singapore 269707</h5>
+                        <h5>Contact Us: +65 9068 6047</h5> -->
+                            <br>
+                        <div class="social-media social-media-two clearfix">
+                            <div class="social-list">
+
+                                <div onclick="openLink('https://www.facebook.com/foodmapping/');"
+                                    style="margin-right: 10px;" class="icon facebook">
+
+                                    <span><i class="fa fa-facebook"></i></span>
+                                </div>
+
+                                <div onclick="openLink('https://www.instagram.com/foodmapping/');"
+                                    class="icon instagram">
+
+                                    <span><i class="fa fa-instagram"></i></span>
+                                </div>
+                                <!-- <div onclick="openLink('https://linktr.ee/carmeticsg');" class="icon"
+                                    style="background-color: green; margin-left: 10px;">
+
+                                    <span><i class="fa fa-tree"></i></span>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p> © 2024 <a href="" target="_blank">Food Mapping</a>. All Rights
+                                Reserved. Made
+                                by <a>Kairos Cheng</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+        <!-- Car Overview Modal -->
+        <div class="car-model-2">
+            <div class="modal fade" id="carOverviewModal" tabindex="-1" role="dialog"
+                aria-labelledby="carOverviewModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-title" id="carOverviewModalLabel">
+                                <h4>Find Your Dream Car</h4>
+                                <h5><i class="flaticon-pin"></i> 123 Kathal St. Tampa City,</h5>
+                            </div>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row modal-raw">
+                                <div class="col-lg-6 modal-left">
+                                    <div class="item active">
+                                        <img src="img/car-11.png" alt="best-car" class="img-fluid">
+                                        <div class="sobuz">
+                                            <div class="price-box">
+                                                <span class="del"><del>$950.00</del></span>
+                                                <br>
+                                                <span class="del-2">$1050.00</span>
+                                            </div>
+                                            <div class="ratings-2">
+                                                <span class="ratings-box">4.5/5</span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                ( 7 Reviews )
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 modal-right">
+                                    <div class="modal-right-content">
+                                        <section>
+                                            <h3>Features</h3>
+                                            <div class="features">
+                                                <ul class="bullets">
+                                                    <li>Cruise Control</li>
+                                                    <li>Airbags</li>
+                                                    <li>Air Conditioning</li>
+                                                    <li>Alarm System</li>
+                                                    <li>Audio Interface</li>
+                                                    <li>CDR Audio</li>
+                                                    <li>Seat Heating</li>
+                                                    <li>ParkAssist</li>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <h3>Overview</h3>
+                                            <ul class="bullets">
+                                                <li>Model</li>
+                                                <li>Year</li>
+                                                <li>Condition</li>
+                                                <li>Price</li>
+                                                <li>Audi</li>
+                                                <li>2020</li>
+                                                <li>Brand New</li>
+                                                <li>$178,000</li>
+                                            </ul>
+                                        </section>
+                                        <div class="description">
+                                            <h3>Description</h3>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry.
+                                                Lorem Ipsum has been the industry's standard.</p>
+                                            <a href="car-details.html" class="btn btn-md btn-round btn-theme">Show
+                                                Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="car-model-2">
+            <div class="modal fade" id="carOverviewModal" tabindex="-1" role="dialog"
+                aria-labelledby="carOverviewModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-title" id="carOverviewModalLabel">
+                                <h4>Find Your Dream Car</h4>
+                                <h5><i class="flaticon-pin"></i> 123 Kathal St. Tampa City,</h5>
+                            </div>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row modal-raw">
+                                <div class="col-lg-6 modal-left">
+                                    <div class="item active">
+                                        <img src="img/car-11.png" alt="best-car" class="img-fluid">
+                                        <div class="sobuz">
+                                            <div class="price-box">
+                                                <span class="del"><del>$950.00</del></span>
+                                                <br>
+                                                <span class="del-2">$1050.00</span>
+                                            </div>
+                                            <div class="ratings-2">
+                                                <span class="ratings-box">4.5/5</span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                ( 7 Reviews )
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 modal-right">
+                                    <div class="modal-right-content">
+                                        <section>
+                                            <h3>Features</h3>
+                                            <div class="features">
+                                                <ul class="bullets">
+                                                    <li>Cruise Control</li>
+                                                    <li>Airbags</li>
+                                                    <li>Air Conditioning</li>
+                                                    <li>Alarm System</li>
+                                                    <li>Audio Interface</li>
+                                                    <li>CDR Audio</li>
+                                                    <li>Seat Heating</li>
+                                                    <li>ParkAssist</li>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <h3>Overview</h3>
+                                            <ul class="bullets">
+                                                <li>Model</li>
+                                                <li>Year</li>
+                                                <li>Condition</li>
+                                                <li>Price</li>
+                                                <li>Audi</li>
+                                                <li>2020</li>
+                                                <li>Brand New</li>
+                                                <li>$178,000</li>
+                                            </ul>
+                                        </section>
+                                        <div class="description">
+                                            <h3>Description</h3>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry.
+                                                Lorem Ipsum has been the industry's standard.</p>
+                                            <a href="car-details.html" class="btn btn-md btn-round btn-theme">Show
+                                                Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- On-click to open url -->
+        <script>
+            function openLink(url) {
+                window.open(url, '_blank').focus();
+
+            }
+        </script>
+        <!-- End of On-click to open url -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap-submenu.js"></script>
+        <script src="js/rangeslider.js"></script>
+        <script src="js/jquery.mb.YTPlayer.js"></script>
+        <script src="js/bootstrap-select.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.scrollUp.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/dropzone.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/jquery.filterizr.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.countdown.js"></script>
+        <script src="js/jquery.mousewheel.min.js"></script>
+        <script src="js/lightgallery-all.js"></script>
+        <script src="js/jnoty.js"></script>
+        <script src="js/sidebar.js"></script>
+        <script src="js/app.js"></script>
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+        <!-- Custom javascript -->
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
